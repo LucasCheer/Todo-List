@@ -30,8 +30,6 @@ const eliminarTareas = () => {
             crearLista();
         })
     })
-    
-
 }
 
 const editarTareas = () =>{
@@ -50,6 +48,7 @@ const editarTareas = () =>{
     })
 
 }
+
 //EVENTOS
 
 textoTarea.addEventListener("keyup", (event) => {
@@ -68,6 +67,3 @@ agregarTareaBtn.addEventListener("click", ()=>{
         crearLista();
     }
 });
-
-
-

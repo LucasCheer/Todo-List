@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
-
-
 /* Estilos Generales */
 *{
     box-sizing: content-box;
@@ -30,9 +28,7 @@ main{
     
 }
 
-
 /* HEADER */
-
 
 h1{
     color: #b88c0b;
@@ -42,7 +38,6 @@ h1{
     font-family: "Jersey 25", sans-serif;
     text-align: center;
     text-decoration: underline;
-
 }
 
 /* HEADER CONTAINER */
@@ -52,7 +47,6 @@ h1{
     justify-content: center;
     width: 82%;
     margin:2rem 0;
-
 }
 
 input{
@@ -66,8 +60,6 @@ input{
     font-size: 1.1rem;
     border-radius: 3px;
     border: 2px solid #af8824;
-    
-
 }
 
 ul{
@@ -81,11 +73,9 @@ ul{
     flex-direction: column;
     gap: 12px;
     overflow: hidden;
-    
 }
 
 li{
-    
     font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
@@ -99,9 +89,7 @@ li{
     font-weight: 400;
 }
 
-
 /* BOTONES */
-
 
 .btn-delete{
     font-size: .9rem;
@@ -110,7 +98,6 @@ li{
     background-color: rgb(245, 87, 87);
     border-radius: 8px;
     padding: 6px;
-
     &:hover{
         background-color: rgb(252, 228, 227);
         color: #ff5252;
@@ -133,7 +120,6 @@ li{
 }
 
 #agregar-tarea{
-    
     font-family: "Ubuntu", sans-serif;
     font-size: 1rem;
     padding: 6px;
@@ -145,4 +131,3 @@ li{
         cursor: pointer;
     }
 }
-
