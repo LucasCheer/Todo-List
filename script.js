@@ -1,4 +1,5 @@
-//DECLARAR VARIABLES
+//VARIABLES
+
 const textoTarea = document.getElementById("texto-tarea");
 const listaTareas = document.getElementById("lista-de-tareas");
 const agregarTareaBtn = document.getElementById("agregar-tarea");
@@ -10,7 +11,8 @@ const tareas = []
 function crearLista(){
     listaTareas.innerHTML = "";
     tareas.forEach((tarea) => {
-        listaTareas.innerHTML += `
+        listaTareas.innerHTML += 
+        `
         <li>${tarea.contenido}
             <div class="item">
                 <input class="checkbox" type="checkbox">
@@ -22,6 +24,7 @@ function crearLista(){
     })
     eliminarTareas();
     editarTareas();
+    marcarTareas();
 }
 
 const eliminarTareas = () => {
@@ -48,7 +51,22 @@ const editarTareas = () =>{
             }
         })
     })
+}
 
+const marcarTareas = () => {
+    const checks = document.querySelectorAll('.checkbox');
+    const listItems = document.querySelectorAll('li');
+
+    checks.forEach((check,index) => {
+        check.addEventListener('click', () => {
+            if(check.checked){
+                listItems[index].classList.add('marcado');
+            }
+            else{
+                listItems[index].classList.remove('marcado');
+            }
+        })
+    })
 }
 
 //EVENTOS
@@ -69,3 +87,4 @@ agregarTareaBtn.addEventListener("click", ()=>{
         crearLista();
     }
 });
+
