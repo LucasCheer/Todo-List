@@ -3,19 +3,21 @@ const textoTarea = document.getElementById("texto-tarea");
 const listaTareas = document.getElementById("lista-de-tareas");
 const agregarTareaBtn = document.getElementById("agregar-tarea");
 
-const tareas = [
-   
-]
+const tareas = []
 
 //FUNCIONES
 
 function crearLista(){
     listaTareas.innerHTML = "";
     tareas.forEach((tarea) => {
-        listaTareas.innerHTML += `<li>${tarea.contenido}
-        <div>
-        <button class="btn-edit">Editar</button> <button class="btn-delete">Eliminar</button></li>
-        </div>
+        listaTareas.innerHTML += `
+        <li>${tarea.contenido}
+            <div class="item">
+                <input class="checkbox" type="checkbox">
+                <button class="btn-edit">Editar</button>
+                <button class="btn-delete">Eliminar</button>
+            </div>
+        </li>
         `
     })
     eliminarTareas();

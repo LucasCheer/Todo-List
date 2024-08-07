@@ -49,7 +49,7 @@ h1{
     margin:2rem 0;
 }
 
-input{
+.input{
     background-color:#ffda79;
     width: 75%;
     min-width: 70px;
@@ -98,6 +98,18 @@ li{
     border-radius: 9px;
     box-shadow: 0 0 2px gray;
     font-weight: 400;
+}
+
+.item{
+    display: flex;
+    gap: .25rem;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+}
+.checkbox{
+    width: 25px;
+    height: 25px;
 }
 
 /* BOTONES */
