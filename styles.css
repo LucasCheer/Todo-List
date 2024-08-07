@@ -105,7 +105,6 @@ li{
     gap: .25rem;
     justify-content: end;
     height: 100%;
-    width: 100%;
 }
 .checkbox{
     width: 25px;
