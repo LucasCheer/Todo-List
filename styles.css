@@ -96,6 +96,7 @@ li{
 }
 .item{
     display: flex;
+    align-items: center;
     gap: .25rem;
     justify-content: end;
     height: 100%;
@@ -106,6 +107,7 @@ li{
 }
 .marcado{
     text-decoration: line-through;
+    filter: grayscale(50%);
 }
 
 /* BOTONES */
