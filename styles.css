@@ -82,7 +82,6 @@ ul{
     overflow: hidden;
 }
 li{
-    font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,19 +94,22 @@ li{
     font-weight: 400;
 }
 .item{
+    text-decoration: none;
     display: flex;
     align-items: center;
-    gap: .25rem;
     justify-content: end;
+    gap: .25rem;
     height: 100%;
+}
+.tachado{
+    text-decoration: line-through;
 }
 .checkbox{
     width: 25px;
     height: 25px;
 }
 .marcado{
-    text-decoration: line-through;
-    filter: grayscale(50%);
+    filter: grayscale(45%);
 }
 
 /* BOTONES */
@@ -126,7 +128,6 @@ li{
         cursor: pointer;
     }
 }
-
 .btn-edit{
     font-size: .9rem;
     font-family: "Ubuntu", sans-serif;
@@ -141,7 +142,6 @@ li{
         cursor: pointer;
     }
 }
-
 #agregar-tarea{
     font-family: "Ubuntu", sans-serif;
     font-size: 1rem;

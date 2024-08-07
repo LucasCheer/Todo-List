@@ -13,7 +13,8 @@ function crearLista(){
     tareas.forEach((tarea) => {
         listaTareas.innerHTML += 
         `
-        <li>${tarea.contenido}
+        <li>
+            <p class="text-content">${tarea.contenido}</p>
             <div class="item">
                 <input class="checkbox" type="checkbox">
                 <button class="btn-edit">Editar</button>
@@ -56,14 +57,17 @@ const editarTareas = () =>{
 const marcarTareas = () => {
     const checks = document.querySelectorAll('.checkbox');
     const listItems = document.querySelectorAll('li');
+    const textContent = document.querySelectorAll('.text-content');
 
     checks.forEach((check,index) => {
         check.addEventListener('click', () => {
             if(check.checked){
                 listItems[index].classList.add('marcado');
+                textContent[index].classList.add('tachado');
             }
             else{
                 listItems[index].classList.remove('marcado');
+                textContent[index].classList.remove('tachado');
             }
         })
     })
